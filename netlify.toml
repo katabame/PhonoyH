@@ -1,6 +1,6 @@
 [build]
   command = """
-            npm install katabame/stylus#dev pug-cli cssnano html-minifier svgo --global &&
+            npm install katabame/stylus#dev pug-cli cssnano-cli html-minifier svgo --global &&
             stylus --compress assets/stylus/ --out public/assets/css/ &&
             pug ./ --out public/ &&
             cp -r assets/image/ public/assets/image/ &&

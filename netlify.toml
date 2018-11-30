@@ -1,0 +1,20 @@
+[build]
+  command = """
+            npm install katabame/stylus#dev pug-cli cssnano html-minifier svgo --global &&
+            stylus --compress assets/stylus/ --out public/assets/css/ &&
+            pug ./ --out public/ &&
+            cp -r assets/image/ public/assets/image/ &&
+            cp favicon.ico public/favicon.ico &&
+            cssnano public/assets/css/style.css public/assets/css/style.css
+            """
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'"
+    X-Frame-Options = DENY
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = no-referrer
+    Link =
+    <assets/css/style.css>; rel=preload; as=style

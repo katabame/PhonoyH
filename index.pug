@@ -1,0 +1,75 @@
+doctype html
+html
+    include assets/pug/head.pug
+    body
+        .page.landing
+            img.logo.no-select(src="assets/image/logo.svg")
+            h1.logo.no-select ASMR
+            .social
+                a.button.icon.ion-logo-youtube(href="https://www.youtube.com/channel/UCr4QSkvPoMFWWwMa3b1OLEQ", target="_blank")
+                a.button.icon.ion-logo-twitter(href="https://twitter.com/phonoyh", target="_blank")
+        .page
+            h3 ほぉーんひょーんASMRとは
+            p 2018年春からYouTubeでASMR動画を投稿しながらのんびり活動している音声サークル
+            .widthwise
+                .member
+                    img.no-select(src="https://pbs.twimg.com/profile_images/1067928653088968704/oAZyTs9u_400x400.jpg")
+                    span.no-select 声/収録/返信担当
+                    p 山あざらし
+                        a.icon.ion-logo-twitter(href="https://twitter.com/yamatoracat", target="_blank")
+
+                .member
+                    img.no-select(src="https://pbs.twimg.com/profile_images/1029333221354291202/pV0G5xxz_400x400.jpg")
+                    span.no-select 編集/シナリオ担当
+                    p 葉桜
+                        a.icon.ion-logo-twitter(href="https://twitter.com/haxacla", target="_blank")
+        .page
+            h3 投稿動画
+            p 作品のほとんどが男女兼用です✩°｡
+            ul
+                a(href="#")
+                    li.icon.ion-logo-youtube
+                        | 耳かきしに来ました！
+                a(href="#")
+                    li.icon.ion-logo-youtube お耳ふ～します！
+                a(href="#")
+                    li.icon.ion-logo-youtube ひつじを数えます！
+                li 甘々な使用人がぎゅっと抱きしめてお癒しします🍀*゜
+                    ul
+                        a(href="#")
+                            li.icon.ion-logo-youtube フルVer.
+                        a(href="#")
+                            li.icon.ion-logo-youtube カットVer.
+                li おみみ実験室
+                    ul
+                        a(href="#")
+                            li.icon.ion-logo-youtube 1
+                        a(href="#")
+                            li.icon.ion-logo-youtube 2
+                        a(href="#")
+                            li.icon.ion-logo-youtube 3
+                a(href="#")
+                    li.icon.ion-logo-youtube すきすきimprint
+                a(href="#")
+                    li.icon.ion-logo-youtube 🎪 頭を抱かれるゼロ距離を体感出来る可能性がある音声 🎪
+
+        .page
+            h3 Twitterでシェアして応援する
+            a.twitter-share-button(href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                                   data-size="large"
+                                   data-text="ほぉーんひょーんASMRさんを応援しています"
+                                   data-url="https://phonoyh.love"
+                                   data-related="phonoyh,katabame"
+                                   data-lang="ja"
+                                   data-dnt="true"
+                                   data-show-count="false") ツイート
+
+        .footer
+            p このサイトは非公式サイトです
+            p 作った人:
+                a(href="https://twitter.com/katabame", target="_blank")
+                    | @katabame
+    script(src="https://platform.twitter.com/widgets.js" charset="utf-8" async)
+    script(src="https://twemoji.maxcdn.com/2/twemoji.min.js?11.2")
+    script
+        | twemoji.parse(document.body);

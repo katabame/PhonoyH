@@ -15,6 +15,3 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "no-referrer"
-    Link = """
-           <assets/css/style.css>; rel=preload; as=style
-           """

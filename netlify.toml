@@ -3,8 +3,6 @@
             npm install katabame/stylus#dev pug-cli cssnano-cli html-minifier svgo --global &&
             stylus --compress assets/stylus/ --out public/assets/css/ &&
             pug ./ --out public/ &&
-            cp -r assets/image/ public/assets/image/ &&
-            cp favicon.ico public/favicon.ico &&
             cssnano public/assets/css/style.css public/assets/css/style.css
             """
   publish = "public"
